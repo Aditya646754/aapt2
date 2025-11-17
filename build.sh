@@ -40,6 +40,12 @@ echo "Using NDK: $ANDROID_NDK"
 echo "API Level: $API"
 echo ""
 
+# Clean build directory to avoid stale LTO objects
+if [ -d "build" ]; then
+    echo "Cleaning previous build..."
+    rm -rf build
+fi
+
 # Run make for the target architecture.
 cmake -GNinja \
   -B "build" \
