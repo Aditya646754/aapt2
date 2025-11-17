@@ -42,5 +42,5 @@ add_subdirectory(submodules/expat/expat EXCLUDE_FROM_ALL)
 add_subdirectory(submodules/protobuf EXCLUDE_FROM_ALL)
 add_subdirectory(submodules/googletest EXCLUDE_FROM_ALL)
 
-# building sdk-tools
+# building sdk-toolss
 add_subdirectory(cmake)
